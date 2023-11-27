@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import UserProfile from '../../components/UserProfile';
-import { API_URL, IUser } from '../../models/user.model';
+import { IUser } from '../../models/user.model';
+import handleApiCall from '../../apiService';
 
 const UserList: React.FC = () => {
   const [users, setUsers] = useState<IUser[]>([]);
 
   useEffect(() => {
     // Fetch users from the API endpoint
-    fetch(API_URL)
-      .then((response) => response.json())
+    handleApiCall("users")
       .then((data) => setUsers(data.results))
       .catch((error) => console.error('Error fetching users:', error));
   }, []);

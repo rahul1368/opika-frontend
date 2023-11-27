@@ -1,4 +1,4 @@
-export const API_URL = "http://localhost:3000/v1/users/";
+export const API_URL = "http://localhost:4000/v1/users/";
 
 export interface IUser {
     id: string;

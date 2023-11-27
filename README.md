@@ -5,6 +5,22 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
+## Clone the repo
+
+`git clone https://github.com/rahul1368/opika-frontend`
+
+Then run following command:
+`cd opika-frontend`
+
+Now run this command:
+
+`npm install`
+
+This will install all the dependenciens that are required.
+
+## `npm setup`
+
+This will insert 2 dummy users to the database
 
 ### `npm start`
 

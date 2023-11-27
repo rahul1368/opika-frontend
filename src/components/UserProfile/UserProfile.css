@@ -1,0 +1,95 @@
+
+  .toggleEmail {
+    background-color: #3498db;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    margin-top: 8px;
+  }
+  
+  .toggleEmail:hover {
+    background-color: #2980b9;
+  }
+  
+  .userProfile {
+    min-width: 320px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 17px;
+    background: #FFF;
+    width: 100%;
+  }
+
+
+  .userCard {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 20px 17px;
+    background: #FFF;
+    box-shadow: 0 0 4px 0 rgba(172, 172, 172, .5);
+    border-radius: 5px;
+  }
+  .avatar {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+  }
+
+  .heading {
+    display: flex;
+    justify-content: center;
+    padding: 14px 0 0 32px;
+  }
+  .name {
+    padding-right: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c3e50;
+    line-height: 24px;
+  }
+
+  .email {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    color: #555555;
+    text-align: center;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    padding: 35px 0 0;
+  }
+  
+  @media (min-width: 500px) {
+    .avatar {
+      top: 20px;
+      left: 20px;
+      margin-left: 0;
+    }
+    .heading {
+      margin-left: 59px;
+      padding: 17px 0 0 28px;
+      justify-content: flex-start;
+    }
+    .email {
+      margin-left: 87px;
+      text-align: left;
+    }
+    .content {
+      flex-direction: row;
+      align-items: center;
+      padding: 31px 0 11px;
+      justify-content: space-between;
+    }
+  }
+  
